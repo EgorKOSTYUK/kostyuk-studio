@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#f4f4ef" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Kostyuk.Studio проектирует и разрабатывает лендинги, сайты для бизнеса, сайты с автоматизацией, веб-сервисы и платформы." />
+    <meta property="og:title" content="Kostyuk.Studio — сайты и веб-продукты для бизнеса" />
+    <meta property="og:description" content="От структуры и UX/UI до разработки, интеграций и запуска." />
+    <meta property="og:type" content="website" />
+    <meta name="application-name" content="Kostyuk.Studio" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Source+Serif+4:ital,wght@1,500;1,600&display=swap" rel="stylesheet" />
+    <title>Kostyuk.Studio — сайты и веб-продукты для бизнеса</title>
+    <script>
+      (() => {
+        let saved = null;
+        try { saved = localStorage.getItem("theme"); } catch {}
+        const dark = saved === "dark" || (saved !== "light" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.toggle("dark", dark);
+        document.documentElement.style.colorScheme = dark ? "dark" : "light";
+        document.querySelector('meta[name="theme-color"]').content = dark ? "#101214" : "#f4f4ef";
+      })();
+    </script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Organization","name":"Kostyuk.Studio","url":"https://kostyuk.studio/","logo":"https://kostyuk.studio/icon-512.png"}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -131,7 +131,7 @@ export default function Home() {
                   Превратим задачу вашего бизнеса в продуманный цифровой продукт — от первого сайта до сложной веб-платформы.
                 </p>
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                  <button type="button" onClick={() => openLeadForm(undefined, "Первый экран")} className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#101214] px-6 py-4 font-semibold text-white transition-colors duration-200 hover:bg-[#3159f5]">
+                  <button type="button" onClick={() => openLeadForm(undefined, "Первый экран")} className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#101214] px-6 py-4 font-semibold text-white transition-colors duration-200 hover:bg-[#3159f5] dark:bg-white/8 dark:ring-1 dark:ring-white/12 dark:hover:bg-[#3159f5]">
                     Рассказать о задаче
                     <ArrowUpRight className="size-5" />
                   </button>
@@ -177,7 +177,7 @@ export default function Home() {
                     <p className="font-display text-2xl font-semibold leading-6 tracking-[-0.05em]">Сайты, сервисы и платформы</p>
                     <p className="mt-3 text-sm leading-5 text-white/75">От идеи до запуска, поддержки и доработок.</p>
                   </div>
-                  <div className="rounded-[22px] bg-[#101214] p-5 text-white shadow-[0_20px_50px_rgba(20,25,42,0.18)] md:p-6">
+                  <div className="rounded-[22px] border border-transparent bg-[#101214] p-5 text-white shadow-[0_20px_50px_rgba(20,25,42,0.18)] dark:border-white/12 md:p-6">
                     <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-[0.15em] text-white/38"><span>Рабочий контур</span><span>04 / 04</span></div>
                     <div className="mt-6 space-y-3">
                       {["UX/UI", "Development", "Integrations"].map((label, index) => (

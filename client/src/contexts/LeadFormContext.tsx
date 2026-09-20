@@ -98,7 +98,7 @@ function ChoiceButton({
         "group flex w-full items-start gap-4 rounded-[20px] border p-4 text-left transition-colors duration-200",
         selected
           ? "border-[#3159f5] bg-[#3159f5] text-white shadow-[0_12px_30px_rgba(49,89,245,0.18)]"
-          : "border-black/10 bg-white/60 hover:border-[#3159f5]/35 hover:bg-white dark:border-white/12 dark:bg-white/6 dark:hover:border-[#90a8ff]/40 dark:hover:bg-white/10",
+          : "border-black/10 bg-white/60 hover:border-[#3159f5]/35 hover:bg-white dark:border-white/20 dark:bg-white/8 dark:hover:border-[#90a8ff]/45 dark:hover:bg-white/12",
       )}
     >
       <span
@@ -341,7 +341,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                         rows={6}
                         maxLength={1500}
                         placeholder="Например: нужен лендинг для новой услуги с формой заявки и подключением аналитики"
-                        className="w-full resize-none rounded-[20px] border border-black/10 bg-white/70 px-4 py-4 leading-6 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/12 dark:bg-white/6 dark:placeholder:text-white/28"
+                        className="w-full resize-none rounded-[20px] border border-black/10 bg-white/70 px-4 py-4 leading-6 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/20 dark:bg-white/8 dark:placeholder:text-white/28"
                       />
                       <p className="mt-2 text-right font-mono text-[10px] text-black/35 dark:text-white/35">{data.description.length} / 1500</p>
                     </div>
@@ -354,7 +354,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                         rows={3}
                         maxLength={800}
                         placeholder="Можно вставить одну или несколько ссылок. Если материалов нет — пропустите"
-                        className="w-full resize-none rounded-[20px] border border-black/10 bg-white/70 px-4 py-4 leading-6 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/12 dark:bg-white/6 dark:placeholder:text-white/28"
+                        className="w-full resize-none rounded-[20px] border border-black/10 bg-white/70 px-4 py-4 leading-6 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/20 dark:bg-white/8 dark:placeholder:text-white/28"
                       />
                     </div>
                   </div>
@@ -385,7 +385,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                               "rounded-full border px-4 py-3 text-sm font-semibold transition-colors",
                               data.deadline === deadline
                                 ? "border-[#3159f5] bg-[#3159f5] text-white"
-                                : "border-black/10 bg-white/65 hover:border-[#3159f5]/35 dark:border-white/12 dark:bg-white/6",
+                                : "border-black/10 bg-white/65 hover:border-[#3159f5]/35 dark:border-white/20 dark:bg-white/8",
                             )}
                           >
                             {deadline}
@@ -410,7 +410,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                           onChange={(event) => update("name", event.target.value.slice(0, 80))}
                           autoComplete="name"
                           placeholder="Как к вам обращаться?"
-                          className="h-13 w-full rounded-[18px] border border-black/10 bg-white/70 px-4 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/12 dark:bg-white/6 dark:placeholder:text-white/28"
+                          className="h-13 w-full rounded-[18px] border border-black/10 bg-white/70 px-4 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/20 dark:bg-white/8 dark:placeholder:text-white/28"
                         />
                       </div>
 
@@ -430,7 +430,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                                 "rounded-[16px] border px-3 py-3 text-sm font-semibold transition-colors",
                                 data.contactMethod === method.id
                                   ? "border-[#3159f5] bg-[#3159f5] text-white"
-                                  : "border-black/10 bg-white/65 dark:border-white/12 dark:bg-white/6",
+                                  : "border-black/10 bg-white/65 dark:border-white/20 dark:bg-white/8",
                               )}
                             >
                               {method.label}
@@ -448,7 +448,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                           inputMode={data.contactMethod === "email" ? "email" : data.contactMethod === "phone" ? "tel" : "text"}
                           autoComplete={data.contactMethod === "email" ? "email" : data.contactMethod === "phone" ? "tel" : "off"}
                           placeholder={data.contactMethod === "telegram" ? "@username или номер телефона" : data.contactMethod === "phone" ? "+7 999 000-00-00" : "name@example.com"}
-                          className="h-13 w-full rounded-[18px] border border-black/10 bg-white/70 px-4 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/12 dark:bg-white/6 dark:placeholder:text-white/28"
+                          className="h-13 w-full rounded-[18px] border border-black/10 bg-white/70 px-4 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/20 dark:bg-white/8 dark:placeholder:text-white/28"
                         />
                       </div>
 
@@ -465,7 +465,7 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                                 "rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors",
                                 data.contactTime === time
                                   ? "border-[#3159f5] bg-[#3159f5] text-white"
-                                  : "border-black/10 bg-white/65 dark:border-white/12 dark:bg-white/6",
+                                  : "border-black/10 bg-white/65 dark:border-white/20 dark:bg-white/8",
                               )}
                             >
                               {time}
@@ -479,12 +479,12 @@ export function LeadFormProvider({ children }: { children: ReactNode }) {
                             value={data.customTime}
                             onChange={(event) => update("customTime", event.target.value.slice(0, 80))}
                             placeholder="Например: будни после 19:30"
-                            className="mt-3 h-13 w-full rounded-[18px] border border-black/10 bg-white/70 px-4 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/12 dark:bg-white/6 dark:placeholder:text-white/28"
+                            className="mt-3 h-13 w-full rounded-[18px] border border-black/10 bg-white/70 px-4 outline-none transition-colors placeholder:text-black/30 focus:border-[#3159f5] dark:border-white/20 dark:bg-white/8 dark:placeholder:text-white/28"
                           />
                         )}
                       </div>
 
-                      <div className="flex items-start gap-3 rounded-[18px] border border-black/8 bg-white/45 p-4 text-sm leading-5 text-black/58 dark:border-white/10 dark:bg-white/5 dark:text-white/58">
+                      <div className="flex items-start gap-3 rounded-[18px] border border-black/8 bg-white/45 p-4 text-sm leading-5 text-black/58 dark:border-white/18 dark:bg-white/7 dark:text-white/58">
                         <input
                           id="lead-consent"
                           type="checkbox"

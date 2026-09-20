@@ -130,7 +130,7 @@ export default function VisheCase() {
               </ol>
             </article>
 
-            <article className="rounded-[32px] bg-[#101214] p-7 text-white md:p-10">
+            <article className="rounded-[32px] border border-transparent bg-[#101214] p-7 text-white dark:border-white/12 dark:bg-[#171a20] dark:shadow-[0_24px_64px_rgba(0,0,0,0.22)] md:p-10">
               <div className="flex items-center justify-between">
                 <span className="eyebrow text-white/45">Рабочее место преподавателя</span>
                 <Network className="size-7 text-[#d4ff4f]" />

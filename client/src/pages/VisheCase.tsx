@@ -198,7 +198,7 @@ export default function VisheCase() {
 
             <div className="case-proof-card mt-14 overflow-hidden rounded-[30px] border border-transparent bg-[#101214] p-7 text-white md:p-10">
               <p className="case-proof-kicker text-xs font-semibold uppercase tracking-[0.18em] text-white/42">Что подтверждает этот проект</p>
-              <p className="mt-5 max-w-5xl font-display text-[clamp(2.2rem,4vw,4.6rem)] font-semibold leading-[1.02] tracking-[-0.06em]">Небольшая команда может спроектировать и довести до запуска сложный продукт с ролями, данными и зависимыми сценариями.</p>
+              <p className="mt-5 max-w-5xl font-display text-[clamp(2.2rem,4vw,4.6rem)] font-semibold leading-[1.02] tracking-[-0.06em]">Опытная команда может спроектировать и довести до запуска сложный продукт с ролями, данными и зависимыми сценариями.</p>
             </div>
           </div>
         </section>
